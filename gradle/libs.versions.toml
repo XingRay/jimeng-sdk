@@ -2,7 +2,6 @@
 kotlin = "2.1.10"
 ktor = "3.1.1"
 kotlinx-serialization = "1.8.0"
-mavenPublish = "0.30.0"
 
 [libraries]
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
@@ -15,4 +14,3 @@ kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serializa
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-mavenPublish = { id = "com.vanniktech.maven.publish", version.ref = "mavenPublish" }
