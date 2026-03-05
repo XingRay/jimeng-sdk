@@ -37,7 +37,7 @@ Then add the dependency in your module's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.github.XingRay:jimeng-sdk:0.0.2")
+    implementation("com.github.XingRay:jimeng-sdk:0.0.3")
 }
 ```
 
@@ -237,7 +237,7 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    implementation("com.github.XingRay:jimeng-sdk:0.0.2")
+    implementation("com.github.XingRay:jimeng-sdk:0.0.3")
 }
 ```
 
