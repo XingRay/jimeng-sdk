@@ -37,26 +37,8 @@ Then add the dependency in your module's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("io.github.xingray:jimeng-sdk:0.0.1")
+    implementation("com.github.XingRay:jimeng-sdk:0.0.2")
 }
-```
-
-### Gradle (Groovy)
-
-```groovy
-dependencies {
-    implementation 'io.github.xingray:jimeng-sdk:0.0.1'
-}
-```
-
-### Maven
-
-```xml
-<dependency>
-    <groupId>io.github.xingray</groupId>
-    <artifactId>jimeng-sdk</artifactId>
-    <version>0.0.1</version>
-</dependency>
 ```
 
 ## Quick Start
@@ -68,9 +50,9 @@ Obtain your Access Key and Secret Key from the [Volcengine Console](https://cons
 ### 2. Basic Usage
 
 ```kotlin
-import io.github.xingray.jimeng.JimengClient
-import io.github.xingray.jimeng.auth.Credential
-import io.github.xingray.jimeng.model.image.TextToImageV30Request
+import com.github.xingray.jimeng.JimengClient
+import com.github.xingray.jimeng.auth.Credential
+import com.github.xingray.jimeng.model.image.TextToImageV30Request
 
 val client = JimengClient()
 val credential = Credential(accessKey = "your-ak", secretKey = "your-sk")
@@ -107,7 +89,7 @@ val result = client.textToImageV30.queryBase64(credential, taskId)
 ### 4. Video Generation
 
 ```kotlin
-import io.github.xingray.jimeng.model.video.VideoProV30T2VRequest
+import com.github.xingray.jimeng.model.video.VideoProV30T2VRequest
 
 val resp = client.videoProV30.submitAndWait(
     credential,
@@ -120,7 +102,7 @@ println("Video URL: ${resp.data?.videoUrl}")
 ### 5. Digital Human
 
 ```kotlin
-import io.github.xingray.jimeng.model.digital.DigitalHumanQuickRecognizeRequest
+import com.github.xingray.jimeng.model.digital.DigitalHumanQuickRecognizeRequest
 
 // Step 1: Subject recognition
 val recognizeResp = client.digitalHumanQuick.submitAndWaitRecognize(
@@ -255,27 +237,10 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    implementation("io.github.xingray:jimeng-sdk:0.0.1")
+    implementation("com.github.XingRay:jimeng-sdk:0.0.2")
 }
 ```
 
-### Gradle (Groovy)
-
-```groovy
-dependencies {
-    implementation 'io.github.xingray:jimeng-sdk:0.0.1'
-}
-```
-
-### Maven
-
-```xml
-<dependency>
-    <groupId>io.github.xingray</groupId>
-    <artifactId>jimeng-sdk</artifactId>
-    <version>0.0.1</version>
-</dependency>
-```
 
 ## 快速开始
 
@@ -286,9 +251,9 @@ dependencies {
 ### 2. 基本用法
 
 ```kotlin
-import io.github.xingray.jimeng.JimengClient
-import io.github.xingray.jimeng.auth.Credential
-import io.github.xingray.jimeng.model.image.TextToImageV30Request
+import com.github.xingray.jimeng.JimengClient
+import com.github.xingray.jimeng.auth.Credential
+import com.github.xingray.jimeng.model.image.TextToImageV30Request
 
 val client = JimengClient()
 val credential = Credential(accessKey = "your-ak", secretKey = "your-sk")
@@ -325,7 +290,7 @@ val result = client.textToImageV30.queryBase64(credential, taskId)
 ### 4. 视频生成
 
 ```kotlin
-import io.github.xingray.jimeng.model.video.VideoProV30T2VRequest
+import com.github.xingray.jimeng.model.video.VideoProV30T2VRequest
 
 val resp = client.videoProV30.submitAndWait(
     credential,
@@ -338,7 +303,7 @@ println("视频链接: ${resp.data?.videoUrl}")
 ### 5. 数字人
 
 ```kotlin
-import io.github.xingray.jimeng.model.digital.DigitalHumanQuickRecognizeRequest
+import com.github.xingray.jimeng.model.digital.DigitalHumanQuickRecognizeRequest
 
 // 步骤1: 主体识别
 val recognizeResp = client.digitalHumanQuick.submitAndWaitRecognize(

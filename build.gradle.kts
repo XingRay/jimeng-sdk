@@ -3,8 +3,8 @@ plugins {
     alias(libs.plugins.kotlin.serialization)
 }
 
-group = "io.github.xingray"
-version = "0.0.1"
+group = "com.github.XingRay"
+version = "0.0.2"
 
 repositories {
     mavenCentral()
