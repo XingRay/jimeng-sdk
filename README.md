@@ -22,6 +22,19 @@ A Kotlin SDK for Jimeng AI (即梦 AI), built on the Volcengine Visual Intellige
 
 ### Gradle (Kotlin DSL)
 
+First, add JitPack repository in your root `settings.gradle.kts`:
+
+```kotlin
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
+Then add the dependency in your module's `build.gradle.kts`:
+
 ```kotlin
 dependencies {
     implementation("io.github.xingray:jimeng-sdk:0.0.1")
@@ -226,6 +239,19 @@ Each video API provides 3 methods:
 ## 安装
 
 ### Gradle (Kotlin DSL)
+
+首先在项目根目录的 `settings.gradle.kts` 中添加 JitPack 仓库：
+
+```kotlin
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
+然后在模块的 `build.gradle.kts` 中添加依赖：
 
 ```kotlin
 dependencies {
